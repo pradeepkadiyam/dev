@@ -1,0 +1,29 @@
+  1  apt update
+    2  sudo apt install openjdk-11-jdk
+    3  java -version
+    4  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz
+    5  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz
+    6  tar -xvzf apache-tomcat-9.0.78.tar.gz
+    7  ls
+    8  mv apache-tomcat-9.0.78 tomcat9
+    9  ls
+   10  cd tomcat9/
+   11  ls
+   12  cd bin
+   13  ls
+   14  ./startup.sh
+   15  find / -name context.xml
+   16  vi /root/tomcat9/webapps/host-manager/META-INF/context.xml
+   17  vi /root/tomcat9/webapps/manager/META-INF/context.xml
+   18  ./shutdown.sh
+   19  cd..
+   20  cd ..
+   21  ls
+   22  cd conf
+   23  ls
+   24  vi tomcat-users.xml
+   25  cd ..
+   26  cd bin
+   27  vi bin
+   28  ./startup.sh
+   29  history
